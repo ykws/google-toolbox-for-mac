@@ -127,6 +127,11 @@ Pod::Spec.new do |s|
     sp.dependency 'GoogleToolboxForMac/Defines', "#{s.version}"
   end
 
+  s.subspec 'NSScanner+Unsigned' do |sp|
+    sp.source_files = 'Foundation/GTMNSScanner+Unsigned.{h,m}'
+    sp.dependency 'GoogleToolboxForMac/Defines', "#{s.version}"
+  end
+
   s.subspec 'NSString+HTML' do |sp|
     sp.source_files = 'Foundation/GTMNSString+HTML.{h,m}'
     sp.dependency 'GoogleToolboxForMac/Core', "#{s.version}"
